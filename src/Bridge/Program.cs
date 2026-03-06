@@ -12,6 +12,10 @@ builder.Services.AddSingleton<CommandTranslator>();
 builder.Services.AddSingleton<MtSicsTcpServer>();
 
 builder.Services.AddHostedService<ScaleService>();
+builder.Services.AddWindowsService(options =>
+{
+    options.ServiceName = "OPC UA MT-SICS Bridge";
+});
 
 var host = builder.Build();
 host.Run();
