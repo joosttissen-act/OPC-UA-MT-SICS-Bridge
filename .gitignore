@@ -1,0 +1,16 @@
+# .NET build artifacts
+bin/
+obj/
+
+# User secrets & local settings
+*.user
+appsettings.Development.json
+
+# Rider / VS / VSCode
+.idea/
+.vscode/
+*.suo
+*.user
+
+# NuGet
+*.nupkg
