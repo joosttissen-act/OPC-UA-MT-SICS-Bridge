@@ -1,0 +1,13 @@
+{
+  "OpcUa": {
+    "EndpointUrl": "opc.tcp://localhost:4840",
+    "WeightNode": "ns=2;s=Scale.Weight",
+    "StabilityNode": "ns=2;s=Scale.Stable",
+    "TareNode": "ns=2;s=Scale.Tare",
+    "ReconnectDelaySeconds": 5,
+    "ReadRetryCount": 3
+  },
+  "MtSicsServer": {
+    "Port": 8001
+  }
+}
